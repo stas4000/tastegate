@@ -107,3 +107,13 @@ def test_fading_container_does_not_fake_low_contrast(tmp_path):
     html = '<div style="opacity:0.5"><span style="display:inline-block;padding:12px;background:#3b7d8c;color:#fff">MR</span></div>'
     report = gate.run(str(page(tmp_path, "", html)), tmp_path / "out", wait_ms=100)
     assert "low_contrast" not in report["rules_failed"], report["findings"]
+
+
+def test_labels_on_a_3d_stack_are_not_overlap(tmp_path):
+    """Stacked slabs under one 3D rotation project onto each other by geometry, not as text over text."""
+    css = (".iso { transform: rotateX(55deg) rotateZ(-45deg); transform-style: preserve-3d; width: 240px; height: 240px; margin: 60px; position: relative; }"
+           ".slab { position: absolute; inset: 0; background: #2a2f38; color: #f2f2f2; display: grid; place-items: center; }"
+           ".slab:nth-child(2) { transform: translateZ(30px); }")
+    html = '<div class="iso"><div class="slab"><span>lower layer</span></div><div class="slab"><span>upper layer</span></div></div>'
+    report = gate.run(str(page(tmp_path, css, html)), tmp_path / "out", wait_ms=100)
+    assert "text_overlap" not in report["rules_failed"], report["findings"]

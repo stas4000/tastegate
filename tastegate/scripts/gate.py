@@ -124,7 +124,12 @@ CHECKS_JS = r"""
   const rotatedRoot = (el) => {
     for (let e = el; e && e.nodeType === 1; e = e.parentElement) {
       const t = cs(e).transform;
-      if (t && t !== 'none') { const m = t.match(/matrix\(([^)]+)\)/); if (m) { const v = m[1].split(',').map(parseFloat); if (Math.abs(v[1]) > 0.01 || Math.abs(v[2]) > 0.01) return e; } }
+      if (t && t !== 'none') {
+        const m2 = t.match(/^matrix\(([^)]+)\)/), m3 = t.match(/^matrix3d\(([^)]+)\)/);
+        const v = (m2 || m3) ? (m2 || m3)[1].split(',').map(parseFloat) : [];
+        const off = m3 ? [1, 2, 4, 6, 8, 9] : [1, 2];  // off-diagonal terms: rotation or skew
+        if (off.some(k => Math.abs(v[k] || 0) > 0.01)) return e;
+      }
     }
     return null;
   };
