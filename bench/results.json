@@ -1,0 +1,291 @@
+{
+  "date": "2026-09-30",
+  "model": "claude-opus-5-5 (Claude Code 2.1.281, -p, all other skills disabled)",
+  "brief": "Build a landing page for Tidewell, a smart ring that tracks sleep and recovery for night-shift nurses. It is sold as a $199 ring plus an optional $6/month membership for the coaching app.\n\nSections: a hero with a clear call to action, how it works, features, what nurses say, pricing, FAQ and a footer.\n\nWrite it as one self-contained file, ./index.html, in the current folder (inline CSS and JS are fine, web fonts and a CDN icon library are allowed, no build step). Make it look like a real, polished product page, on phones and on desktop. When the file is finished, reply with one line saying it is done.\n",
+  "judge": "impeccable detect --json --no-config (pbakaus/impeccable 4.4.0) + tastegate gate.py",
+  "summary": {
+    "plain": {
+      "runs": 5,
+      "impeccable_findings_avg": 29.2,
+      "gate_fail_avg": 45.4,
+      "minutes_avg": 2.9,
+      "cost_usd_avg": 0.65,
+      "impeccable_per_run": [
+        30,
+        24,
+        37,
+        23,
+        32
+      ],
+      "gate_per_run": [
+        54,
+        45,
+        34,
+        37,
+        57
+      ]
+    },
+    "skill": {
+      "runs": 5,
+      "impeccable_findings_avg": 2.2,
+      "gate_fail_avg": 0.0,
+      "minutes_avg": 4.0,
+      "cost_usd_avg": 0.89,
+      "impeccable_per_run": [
+        1,
+        2,
+        1,
+        1,
+        6
+      ],
+      "gate_per_run": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "runs": [
+    {
+      "run": "plain-1",
+      "arm": "plain",
+      "seconds": 199,
+      "built": true,
+      "cost_usd": 0.7432205999999999,
+      "turns": 2,
+      "is_error": false,
+      "impeccable_findings": 30,
+      "impeccable_rules": {
+        "low-contrast": 3,
+        "dark-glow": 5,
+        "icon-tile-stack": 10,
+        "italic-serif-display": 1,
+        "cramped-padding": 4,
+        "gpt-thin-border-wide-shadow": 1,
+        "radial-spotlight-glow": 1,
+        "overused-font": 2,
+        "skipped-heading": 2,
+        "radial-halo": 1
+      },
+      "gate_fail": 54,
+      "gate_rules": {
+        "tiny_text": 23,
+        "low_contrast": 14,
+        "small_tap_target": 12,
+        "eyebrow_labels": 1,
+        "equal_icon_cards": 3,
+        "em_dash": 1
+      }
+    },
+    {
+      "run": "plain-2",
+      "arm": "plain",
+      "seconds": 152,
+      "built": true,
+      "cost_usd": 0.5778376000000001,
+      "turns": 2,
+      "is_error": false,
+      "impeccable_findings": 24,
+      "impeccable_rules": {
+        "gray-on-color": 2,
+        "low-contrast": 6,
+        "dark-glow": 6,
+        "icon-tile-stack": 3,
+        "italic-serif-display": 1,
+        "clipped-overflow-container": 1,
+        "gpt-thin-border-wide-shadow": 1,
+        "overused-font": 2,
+        "flat-type-hierarchy": 1,
+        "skipped-heading": 1
+      },
+      "gate_fail": 45,
+      "gate_rules": {
+        "tiny_text": 10,
+        "low_contrast": 18,
+        "small_tap_target": 12,
+        "eyebrow_labels": 1,
+        "equal_icon_cards": 3,
+        "em_dash": 1
+      }
+    },
+    {
+      "run": "plain-3",
+      "arm": "plain",
+      "seconds": 180,
+      "built": true,
+      "cost_usd": 0.6775656,
+      "turns": 2,
+      "is_error": false,
+      "impeccable_findings": 37,
+      "impeccable_rules": {
+        "gradient-text": 2,
+        "low-contrast": 10,
+        "dark-glow": 8,
+        "icon-tile-stack": 8,
+        "italic-serif-display": 1,
+        "cramped-padding": 2,
+        "clipped-overflow-container": 1,
+        "overused-font": 2,
+        "skipped-heading": 1,
+        "em-dash-overuse": 1,
+        "marketing-buzzword": 1
+      },
+      "gate_fail": 34,
+      "gate_rules": {
+        "tiny_text": 2,
+        "low_contrast": 14,
+        "small_tap_target": 12,
+        "gradient_text": 1,
+        "eyebrow_labels": 1,
+        "equal_icon_cards": 3,
+        "em_dash": 1
+      }
+    },
+    {
+      "run": "plain-4",
+      "arm": "plain",
+      "seconds": 164,
+      "built": true,
+      "cost_usd": 0.6351776,
+      "turns": 2,
+      "is_error": false,
+      "impeccable_findings": 23,
+      "impeccable_rules": {
+        "low-contrast": 1,
+        "dark-glow": 6,
+        "icon-tile-stack": 6,
+        "italic-serif-display": 1,
+        "cramped-padding": 3,
+        "gpt-thin-border-wide-shadow": 1,
+        "overused-font": 2,
+        "skipped-heading": 2,
+        "shape-assembled-illustration": 1
+      },
+      "gate_fail": 37,
+      "gate_rules": {
+        "text_overlap": 1,
+        "low_contrast": 4,
+        "tiny_text": 5,
+        "small_tap_target": 22,
+        "eyebrow_labels": 1,
+        "equal_icon_cards": 3,
+        "em_dash": 1
+      }
+    },
+    {
+      "run": "plain-5",
+      "arm": "plain",
+      "seconds": 164,
+      "built": true,
+      "cost_usd": 0.6202015999999999,
+      "turns": 2,
+      "is_error": false,
+      "impeccable_findings": 32,
+      "impeccable_rules": {
+        "gray-on-color": 2,
+        "low-contrast": 5,
+        "dark-glow": 4,
+        "icon-tile-stack": 10,
+        "italic-serif-display": 1,
+        "cramped-padding": 2,
+        "gpt-thin-border-wide-shadow": 1,
+        "radial-spotlight-glow": 1,
+        "overused-font": 2,
+        "cream-palette": 1,
+        "skipped-heading": 1,
+        "shape-assembled-illustration": 1,
+        "em-dash-overuse": 1
+      },
+      "gate_fail": 57,
+      "gate_rules": {
+        "low_contrast": 35,
+        "tiny_text": 5,
+        "small_tap_target": 12,
+        "eyebrow_labels": 1,
+        "equal_icon_cards": 3,
+        "em_dash": 1
+      }
+    },
+    {
+      "run": "skill-1",
+      "arm": "skill",
+      "seconds": 301,
+      "built": true,
+      "cost_usd": 1.1237773999999998,
+      "turns": 24,
+      "is_error": false,
+      "impeccable_findings": 1,
+      "impeccable_rules": {
+        "cramped-padding": 1
+      },
+      "gate_fail": 0,
+      "gate_rules": {}
+    },
+    {
+      "run": "skill-2",
+      "arm": "skill",
+      "seconds": 234,
+      "built": true,
+      "cost_usd": 0.8415196,
+      "turns": 17,
+      "is_error": false,
+      "impeccable_findings": 2,
+      "impeccable_rules": {
+        "cramped-padding": 2
+      },
+      "gate_fail": 0,
+      "gate_rules": {}
+    },
+    {
+      "run": "skill-3",
+      "arm": "skill",
+      "seconds": 202,
+      "built": true,
+      "cost_usd": 0.8150855999999999,
+      "turns": 17,
+      "is_error": false,
+      "impeccable_findings": 1,
+      "impeccable_rules": {
+        "skipped-heading": 1
+      },
+      "gate_fail": 0,
+      "gate_rules": {}
+    },
+    {
+      "run": "skill-4",
+      "arm": "skill",
+      "seconds": 242,
+      "built": true,
+      "cost_usd": 0.8478431999999999,
+      "turns": 19,
+      "is_error": false,
+      "impeccable_findings": 1,
+      "impeccable_rules": {
+        "skipped-heading": 1
+      },
+      "gate_fail": 0,
+      "gate_rules": {}
+    },
+    {
+      "run": "skill-5",
+      "arm": "skill",
+      "seconds": 236,
+      "built": true,
+      "cost_usd": 0.8334463999999999,
+      "turns": 15,
+      "is_error": false,
+      "impeccable_findings": 6,
+      "impeccable_rules": {
+        "icon-tile-stack": 2,
+        "undersized-ui-text": 1,
+        "tight-leading": 1,
+        "gpt-thin-border-wide-shadow": 1,
+        "skipped-heading": 1
+      },
+      "gate_fail": 0,
+      "gate_rules": {}
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Build a landing page for Tidewell, a smart ring that tracks sleep and recovery for night-shift nurses. It is sold as a $199 ring plus an optional $6/month membership for the coaching app.
+
+Sections: a hero with a clear call to action, how it works, features, what nurses say, pricing, FAQ and a footer.
+
+Write it as one self-contained file, ./index.html, in the current folder (inline CSS and JS are fine, web fonts and a CDN icon library are allowed, no build step). Make it look like a real, polished product page, on phones and on desktop. When the file is finished, reply with one line saying it is done.

@@ -1,0 +1,4 @@
+__pycache__/
+.tastegate/
+.pytest_cache/
+*.pyc
