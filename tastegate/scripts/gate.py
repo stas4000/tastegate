@@ -46,12 +46,11 @@ CHECKS_JS = r"""
       const t = cs(e);
       if ((t.clip && t.clip !== 'auto') || (t.clipPath && t.clipPath !== 'none' && /inset\(50%|circle\(0|polygon\(0px 0px, 0px 0px/.test(t.clipPath))) return false;
     }
-    const docR = el.getBoundingClientRect();
-    if (docR.bottom + window.scrollY <= 0 || docR.right + window.scrollX <= 0) return false;
     const closed = el.closest('details:not([open])');
     if (closed && !el.closest('summary')) return false;
     const r = el.getBoundingClientRect();
     if (r.width < 2 || r.height < 2) return false;
+    if (r.bottom + window.scrollY <= 0 || r.right + window.scrollX <= 0) return false;  // parked off-screen
     return opacityOf(el) >= 0.1;
   };
   const parseColors = (str) => {
