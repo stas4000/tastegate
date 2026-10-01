@@ -101,3 +101,5 @@ tastegate would not exist without [impeccable](https://github.com/pbakaus/impecc
 ## More skills
 
 tastegate is free. [SWE Stack](https://skills.bles-software.com) is 23 more skills that make coding agents prove their work before they say done, including the visual QA scanner this gate grew from. Built by [Bles Software](https://bles-software.com).
+
+New free skills and pack updates by email: https://swestack.bles-software.com/#email
