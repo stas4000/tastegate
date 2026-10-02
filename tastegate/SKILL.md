@@ -1,7 +1,7 @@
 ---
 name: tastegate
 description: Build or fix a frontend (landing page, marketing site, dashboard, app screen, component) so it looks designed, not AI-generated, and prove it in a real browser before calling it done. Picks a design direction first (taste), builds on a craft floor (impeccable-style rules), then runs scripts/gate.py, which renders the page at phone and desktop width and fails on overlapping text, sideways scroll, low contrast, tiny tap targets, AI purple gradients, gradient text, emoji icons, eyebrow labels, default fonts, three-equal-card grids and placeholder copy. Use for any UI build, redesign, polish or "make it look better" request.
-license: MIT (derived parts: see THIRD_PARTY_NOTICES.md)
+license: "MIT (derived parts: see THIRD_PARTY_NOTICES.md)"
 ---
 
 # tastegate
